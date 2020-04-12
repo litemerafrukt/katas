@@ -1,0 +1,16 @@
+module Leap where
+
+import Prelude
+
+isZero :: Int -> Boolean
+isZero = (==) 0
+
+noRem :: Int -> Int -> Boolean
+noRem n1 n2 = isZero $ mod n1 n2
+
+isLeapYear :: Int -> Boolean
+isLeapYear year
+    | year `noRem` 4 && not (year `noRem` 100) = true
+    | year `noRem` 400 = true
+    | otherwise = false
+

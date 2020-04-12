@@ -1,0 +1,68 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Clock	clock.py	/^class Clock():$/;"	kind:class	line:4
+Clock	clock_test.py	/^from clock import Clock$/;"	kind:namespace	line:3
+ClockTest	clock_test.py	/^class ClockTest(unittest.TestCase):$/;"	kind:class	line:6
+__eq__	clock.py	/^    def __eq__(self, other):$/;"	kind:member	line:29
+__init__	clock.py	/^    def __init__(self, hour, minute):$/;"	kind:member	line:7
+__str__	clock.py	/^    def __str__(self):$/;"	kind:member	line:24
+add	clock.py	/^    def add(self, minutes):$/;"	kind:member	line:19
+clock.py	clock.py	1;"	kind:file	line:1
+clock_test.py	clock_test.py	1;"	kind:file	line:1
+hour	clock.py	/^    def hour(self):$/;"	kind:member	line:11
+minute	clock.py	/^    def minute(self):$/;"	kind:member	line:15
+test_add_across_midnight	clock_test.py	/^    def test_add_across_midnight(self):$/;"	kind:member	line:81
+test_add_minutes	clock_test.py	/^    def test_add_minutes(self):$/;"	kind:member	line:66
+test_add_more_than_one_day	clock_test.py	/^    def test_add_more_than_one_day(self):$/;"	kind:member	line:84
+test_add_more_than_one_hour	clock_test.py	/^    def test_add_more_than_one_hour(self):$/;"	kind:member	line:75
+test_add_more_than_two_days	clock_test.py	/^    def test_add_more_than_two_days(self):$/;"	kind:member	line:87
+test_add_more_than_two_hours_with_carry	clock_test.py	/^    def test_add_more_than_two_hours_with_carry(self):$/;"	kind:member	line:78
+test_add_no_minutes	clock_test.py	/^    def test_add_no_minutes(self):$/;"	kind:member	line:69
+test_add_to_next_hour	clock_test.py	/^    def test_add_to_next_hour(self):$/;"	kind:member	line:72
+test_clocks_a_minute_apart	clock_test.py	/^    def test_clocks_a_minute_apart(self):$/;"	kind:member	line:118
+test_clocks_an_hour_apart	clock_test.py	/^    def test_clocks_an_hour_apart(self):$/;"	kind:member	line:121
+test_clocks_with_hour_overflow	clock_test.py	/^    def test_clocks_with_hour_overflow(self):$/;"	kind:member	line:124
+test_clocks_with_hour_overflow_by_several_days	clock_test.py	/^    def test_clocks_with_hour_overflow_by_several_days(self):$/;"	kind:member	line:127
+test_clocks_with_minute_overflow	clock_test.py	/^    def test_clocks_with_minute_overflow(self):$/;"	kind:member	line:139
+test_clocks_with_minute_overflow_by_several_days	clock_test.py	/^    def test_clocks_with_minute_overflow_by_several_days(self):$/;"	kind:member	line:142
+test_clocks_with_negative_hour	clock_test.py	/^    def test_clocks_with_negative_hour(self):$/;"	kind:member	line:130
+test_clocks_with_negative_hour_that_wraps	clock_test.py	/^    def test_clocks_with_negative_hour_that_wraps(self):$/;"	kind:member	line:133
+test_clocks_with_negative_hour_that_wraps_multiple_times	clock_test.py	/^    def test_clocks_with_negative_hour_that_wraps_multiple_times(self):$/;"	kind:member	line:136
+test_clocks_with_negative_hours_and_minutes	clock_test.py	/^    def test_clocks_with_negative_hours_and_minutes(self):$/;"	kind:member	line:154
+test_clocks_with_negative_hours_and_minutes_that_wrap	clock_test.py	/^    def test_clocks_with_negative_hours_and_minutes_that_wrap(self):$/;"	kind:member	line:157
+test_clocks_with_negative_minute	clock_test.py	/^    def test_clocks_with_negative_minute(self):$/;"	kind:member	line:145
+test_clocks_with_negative_minute_that_wraps	clock_test.py	/^    def test_clocks_with_negative_minute_that_wraps(self):$/;"	kind:member	line:148
+test_clocks_with_negative_minute_that_wraps_multiple_times	clock_test.py	/^    def test_clocks_with_negative_minute_that_wraps_multiple_times(self):$/;"	kind:member	line:151
+test_clocks_with_same_time	clock_test.py	/^    def test_clocks_with_same_time(self):$/;"	kind:member	line:115
+test_hour_and_minutes_roll_over	clock_test.py	/^    def test_hour_and_minutes_roll_over(self):$/;"	kind:member	line:32
+test_hour_and_minutes_roll_over_continuously	clock_test.py	/^    def test_hour_and_minutes_roll_over_continuously(self):$/;"	kind:member	line:35
+test_hour_and_minutes_roll_over_to_exactly_midnight	clock_test.py	/^    def test_hour_and_minutes_roll_over_to_exactly_midnight(self):$/;"	kind:member	line:38
+test_hour_rolls_over	clock_test.py	/^    def test_hour_rolls_over(self):$/;"	kind:member	line:17
+test_hour_rolls_over_continuously	clock_test.py	/^    def test_hour_rolls_over_continuously(self):$/;"	kind:member	line:20
+test_midnight_is_zero_hours	clock_test.py	/^    def test_midnight_is_zero_hours(self):$/;"	kind:member	line:14
+test_minutes_roll_over	clock_test.py	/^    def test_minutes_roll_over(self):$/;"	kind:member	line:26
+test_minutes_roll_over_continuously	clock_test.py	/^    def test_minutes_roll_over_continuously(self):$/;"	kind:member	line:29
+test_negative_hour	clock_test.py	/^    def test_negative_hour(self):$/;"	kind:member	line:41
+test_negative_hour_and_minutes_both_roll_over	clock_test.py	/^    def test_negative_hour_and_minutes_both_roll_over(self):$/;"	kind:member	line:59
+test_negative_hour_and_minutes_both_roll_over_continuously	clock_test.py	/^    def test_negative_hour_and_minutes_both_roll_over_continuously(self):$/;"	kind:member	line:62
+test_negative_hour_rolls_over	clock_test.py	/^    def test_negative_hour_rolls_over(self):$/;"	kind:member	line:44
+test_negative_hour_rolls_over_continuously	clock_test.py	/^    def test_negative_hour_rolls_over_continuously(self):$/;"	kind:member	line:47
+test_negative_minutes	clock_test.py	/^    def test_negative_minutes(self):$/;"	kind:member	line:50
+test_negative_minutes_roll_over	clock_test.py	/^    def test_negative_minutes_roll_over(self):$/;"	kind:member	line:53
+test_negative_minutes_roll_over_continuously	clock_test.py	/^    def test_negative_minutes_roll_over_continuously(self):$/;"	kind:member	line:56
+test_on_the_hour	clock_test.py	/^    def test_on_the_hour(self):$/;"	kind:member	line:8
+test_past_the_hour	clock_test.py	/^    def test_past_the_hour(self):$/;"	kind:member	line:11
+test_sixty_minutes_is_next_hour	clock_test.py	/^    def test_sixty_minutes_is_next_hour(self):$/;"	kind:member	line:23
+test_subtract_across_midnight	clock_test.py	/^    def test_subtract_across_midnight(self):$/;"	kind:member	line:99
+test_subtract_minutes	clock_test.py	/^    def test_subtract_minutes(self):$/;"	kind:member	line:90
+test_subtract_more_than_an_hour	clock_test.py	/^    def test_subtract_more_than_an_hour(self):$/;"	kind:member	line:96
+test_subtract_more_than_one_day	clock_test.py	/^    def test_subtract_more_than_one_day(self):$/;"	kind:member	line:108
+test_subtract_more_than_two_days	clock_test.py	/^    def test_subtract_more_than_two_days(self):$/;"	kind:member	line:111
+test_subtract_more_than_two_hours	clock_test.py	/^    def test_subtract_more_than_two_hours(self):$/;"	kind:member	line:102
+test_subtract_more_than_two_hours_with_borrow	clock_test.py	/^    def test_subtract_more_than_two_hours_with_borrow(self):$/;"	kind:member	line:105
+test_subtract_to_previous_hour	clock_test.py	/^    def test_subtract_to_previous_hour(self):$/;"	kind:member	line:93
+unittest	clock_test.py	/^import unittest$/;"	kind:namespace	line:1

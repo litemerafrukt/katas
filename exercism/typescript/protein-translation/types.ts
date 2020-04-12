@@ -1,0 +1,31 @@
+export type Codon =
+  | "AUG"
+  | "UGG"
+  | "UUU"
+  | "UUC"
+  | "UUA"
+  | "UUG"
+  | "UAU"
+  | "UAC"
+  | "UGU"
+  | "UGC"
+  | "UAA"
+  | "UAG"
+  | "UGA"
+  | "UCU"
+  | "UCC"
+  | "UCA"
+  | "UCG"
+
+export type Protein =
+  | "Methionine"
+  | "Tryptophan"
+  | "Tryptophan"
+  | "Phenylalanine"
+  | "Leucine"
+  | "Tyrosine"
+  | "Cysteine"
+  | "Serine"
+  | "STOP"
+
+export type CodonsProteinPair = Readonly<[readonly Codon[], Protein]>

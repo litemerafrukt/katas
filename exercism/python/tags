@@ -1,0 +1,225 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BobTests	bob/bob_test.py	/^class BobTests(unittest.TestCase):$/;"	kind:class	line:9
+Clock	clock/clock.py	/^class Clock():$/;"	kind:class	line:1
+Clock	clock/clock_test.py	/^from clock import Clock$/;"	kind:namespace	line:3
+ClockTest	clock/clock_test.py	/^class ClockTest(unittest.TestCase):$/;"	kind:class	line:6
+DNATests	rna-transcription/rna_transcription_test.py	/^class DNATests(unittest.TestCase):$/;"	kind:class	line:6
+GigasecondTest	gigasecond/gigasecond_test.py	/^class GigasecondTest(unittest.TestCase):$/;"	kind:class	line:7
+HammingTest	hamming/hamming_test.py	/^class HammingTest(unittest.TestCase):$/;"	kind:class	line:6
+HelloWorldTests	hello-world/hello_world_test.py	/^class HelloWorldTests(unittest.TestCase):$/;"	kind:class	line:9
+PangramTests	pangram/pangram_test.py	/^class PangramTests(unittest.TestCase):$/;"	kind:class	line:8
+WordCountTests	run-length-encoding/run_length_test.py	/^class WordCountTests(unittest.TestCase):$/;"	kind:class	line:9
+WordCountTests	word-count/word_count_test.py	/^class WordCountTests(unittest.TestCase):$/;"	kind:class	line:15
+YearTest	leap/leap_test.py	/^class YearTest(unittest.TestCase):$/;"	kind:class	line:6
+__eq__	clock/clock.py	/^    def __eq__(self, other):$/;"	kind:member	line:19
+__init__	clock/clock.py	/^    def __init__(self, hour, minute):$/;"	kind:member	line:2
+__str__	clock/clock.py	/^    def __str__(self):$/;"	kind:member	line:15
+add	clock/clock.py	/^    def add(self, minutes):$/;"	kind:member	line:11
+add_gigasecond	gigasecond/gigasecond.py	/^def add_gigasecond(birthdate: datetime) -> datetime:$/;"	kind:function	line:4
+add_gigasecond	gigasecond/gigasecond_test.py	/^from gigasecond import add_gigasecond$/;"	kind:namespace	line:4
+bob	bob/bob_test.py	/^import bob$/;"	kind:namespace	line:6
+bob.py	bob/bob.py	1;"	kind:file	line:1
+bob_test.py	bob/bob_test.py	1;"	kind:file	line:1
+clock.py	clock/clock.py	1;"	kind:file	line:1
+clock_test.py	clock/clock_test.py	1;"	kind:file	line:1
+datetime	gigasecond/gigasecond.py	/^from datetime import datetime, timedelta$/;"	kind:namespace	line:1
+datetime	gigasecond/gigasecond_test.py	/^from datetime import datetime$/;"	kind:namespace	line:1
+decode	run-length-encoding/run_length.py	/^def decode(data: str) -> str:$/;"	kind:function	line:8
+decode	run-length-encoding/run_length_test.py	/^from run_length import encode, decode$/;"	kind:namespace	line:6
+decode_if_needed	word-count/word_count_test.py	/^def decode_if_needed(string):$/;"	kind:function	line:8
+distance	hamming/hamming.py	/^def distance(first_strand: str, second_strand: str) -> int:$/;"	kind:function	line:4
+distance	hamming/hamming_starmap.py	/^def distance(first_strand: str, second_strand: str) -> int:$/;"	kind:function	line:4
+encode	run-length-encoding/run_length.py	/^def encode(data: str) -> str:$/;"	kind:function	line:3
+encode	run-length-encoding/run_length_test.py	/^from run_length import encode, decode$/;"	kind:namespace	line:6
+gigasecond.py	gigasecond/gigasecond.py	1;"	kind:file	line:1
+gigasecond_test.py	gigasecond/gigasecond_test.py	1;"	kind:file	line:1
+hamming	hamming/hamming_test.py	/^import hamming$/;"	kind:namespace	line:3
+hamming.py	hamming/hamming.py	1;"	kind:file	line:1
+hamming_starmap.py	hamming/hamming_starmap.py	1;"	kind:file	line:1
+hamming_test.py	hamming/hamming_test.py	1;"	kind:file	line:1
+hello	hello-world/hello_world.py	/^def hello(name=''):$/;"	kind:function	line:4
+hello_world	hello-world/hello_world_test.py	/^import hello_world$/;"	kind:namespace	line:6
+hello_world.py	hello-world/hello_world.py	1;"	kind:file	line:1
+hello_world_test.py	hello-world/hello_world_test.py	1;"	kind:file	line:1
+hey	bob/bob.py	/^def hey(what: str) -> str:$/;"	kind:function	line:6
+hour	clock/clock.py	/^    def hour(self):$/;"	kind:member	line:5
+is_leap_year	leap/leap.py	/^def is_leap_year(year: int) -> bool:$/;"	kind:function	line:1
+is_leap_year	leap/leap_test.py	/^from leap import is_leap_year$/;"	kind:namespace	line:3
+is_pangram	pangram/pangram.py	/^def is_pangram(phrase: str) -> bool:$/;"	kind:function	line:1
+is_pangram	pangram/pangram_test.py	/^from pangram import is_pangram$/;"	kind:namespace	line:5
+leap.py	leap/leap.py	1;"	kind:file	line:1
+leap_test.py	leap/leap_test.py	1;"	kind:file	line:1
+minute	clock/clock.py	/^    def minute(self):$/;"	kind:member	line:8
+pangram.py	pangram/pangram.py	1;"	kind:file	line:1
+pangram_test.py	pangram/pangram_test.py	1;"	kind:file	line:1
+re	word-count/word_count.py	/^import re$/;"	kind:namespace	line:1
+reduce	hamming/hamming.py	/^from functools import reduce$/;"	kind:namespace	line:1
+rna_transcription.py	rna-transcription/rna_transcription.py	1;"	kind:file	line:1
+rna_transcription_test.py	rna-transcription/rna_transcription_test.py	1;"	kind:file	line:1
+run_length.py	run-length-encoding/run_length.py	1;"	kind:file	line:1
+run_length_test.py	run-length-encoding/run_length_test.py	1;"	kind:file	line:1
+starmap	hamming/hamming_starmap.py	/^from itertools import starmap$/;"	kind:namespace	line:1
+test_1	gigasecond/gigasecond_test.py	/^    def test_1(self):$/;"	kind:member	line:8
+test_2	gigasecond/gigasecond_test.py	/^    def test_2(self):$/;"	kind:member	line:14
+test_3	gigasecond/gigasecond_test.py	/^    def test_3(self):$/;"	kind:member	line:20
+test_4	gigasecond/gigasecond_test.py	/^    def test_4(self):$/;"	kind:member	line:26
+test_5	gigasecond/gigasecond_test.py	/^    def test_5(self):$/;"	kind:member	line:32
+test_add_across_midnight	clock/clock_test.py	/^    def test_add_across_midnight(self):$/;"	kind:member	line:81
+test_add_minutes	clock/clock_test.py	/^    def test_add_minutes(self):$/;"	kind:member	line:66
+test_add_more_than_one_day	clock/clock_test.py	/^    def test_add_more_than_one_day(self):$/;"	kind:member	line:84
+test_add_more_than_one_hour	clock/clock_test.py	/^    def test_add_more_than_one_hour(self):$/;"	kind:member	line:75
+test_add_more_than_two_days	clock/clock_test.py	/^    def test_add_more_than_two_days(self):$/;"	kind:member	line:87
+test_add_more_than_two_hours_with_carry	clock/clock_test.py	/^    def test_add_more_than_two_hours_with_carry(self):$/;"	kind:member	line:78
+test_add_no_minutes	clock/clock_test.py	/^    def test_add_no_minutes(self):$/;"	kind:member	line:69
+test_add_to_next_hour	clock/clock_test.py	/^    def test_add_to_next_hour(self):$/;"	kind:member	line:72
+test_another_missing_character	pangram/pangram_test.py	/^    def test_another_missing_character(self):$/;"	kind:member	line:21
+test_asking_a_numeric_question	bob/bob_test.py	/^    def test_asking_a_numeric_question(self):$/;"	kind:member	line:29
+test_asking_a_question	bob/bob_test.py	/^    def test_asking_a_question(self):$/;"	kind:member	line:23
+test_calmly_speaking_with_umlauts	bob/bob_test.py	/^    def test_calmly_speaking_with_umlauts(self):$/;"	kind:member	line:77
+test_century	leap/leap_test.py	/^    def test_century(self):$/;"	kind:member	line:16
+test_clocks_a_minute_apart	clock/clock_test.py	/^    def test_clocks_a_minute_apart(self):$/;"	kind:member	line:118
+test_clocks_an_hour_apart	clock/clock_test.py	/^    def test_clocks_an_hour_apart(self):$/;"	kind:member	line:121
+test_clocks_with_hour_overflow	clock/clock_test.py	/^    def test_clocks_with_hour_overflow(self):$/;"	kind:member	line:124
+test_clocks_with_hour_overflow_by_several_days	clock/clock_test.py	/^    def test_clocks_with_hour_overflow_by_several_days(self):$/;"	kind:member	line:127
+test_clocks_with_minute_overflow	clock/clock_test.py	/^    def test_clocks_with_minute_overflow(self):$/;"	kind:member	line:139
+test_clocks_with_minute_overflow_by_several_days	clock/clock_test.py	/^    def test_clocks_with_minute_overflow_by_several_days(self):$/;"	kind:member	line:142
+test_clocks_with_negative_hour	clock/clock_test.py	/^    def test_clocks_with_negative_hour(self):$/;"	kind:member	line:130
+test_clocks_with_negative_hour_that_wraps	clock/clock_test.py	/^    def test_clocks_with_negative_hour_that_wraps(self):$/;"	kind:member	line:133
+test_clocks_with_negative_hour_that_wraps_multiple_times	clock/clock_test.py	/^    def test_clocks_with_negative_hour_that_wraps_multiple_times(self):$/;"	kind:member	line:136
+test_clocks_with_negative_hours_and_minutes	clock/clock_test.py	/^    def test_clocks_with_negative_hours_and_minutes(self):$/;"	kind:member	line:154
+test_clocks_with_negative_hours_and_minutes_that_wrap	clock/clock_test.py	/^    def test_clocks_with_negative_hours_and_minutes_that_wrap(self):$/;"	kind:member	line:157
+test_clocks_with_negative_minute	clock/clock_test.py	/^    def test_clocks_with_negative_minute(self):$/;"	kind:member	line:145
+test_clocks_with_negative_minute_that_wraps	clock/clock_test.py	/^    def test_clocks_with_negative_minute_that_wraps(self):$/;"	kind:member	line:148
+test_clocks_with_negative_minute_that_wraps_multiple_times	clock/clock_test.py	/^    def test_clocks_with_negative_minute_that_wraps_multiple_times(self):$/;"	kind:member	line:151
+test_clocks_with_same_time	clock/clock_test.py	/^    def test_clocks_with_same_time(self):$/;"	kind:member	line:115
+test_combination	run-length-encoding/run_length_test.py	/^    def test_combination(self):$/;"	kind:member	line:27
+test_complete_distance_in_single_nucleotide_strands	hamming/hamming_test.py	/^    def test_complete_distance_in_single_nucleotide_strands(self):$/;"	kind:member	line:14
+test_complete_distance_in_small_strands	hamming/hamming_test.py	/^    def test_complete_distance_in_small_strands(self):$/;"	kind:member	line:17
+test_correctly_handles_completely_invalid_input	rna-transcription/rna_transcription_test.py	/^    def test_correctly_handles_completely_invalid_input(self):$/;"	kind:member	line:26
+test_correctly_handles_partially_invalid_input	rna-transcription/rna_transcription_test.py	/^    def test_correctly_handles_partially_invalid_input(self):$/;"	kind:member	line:29
+test_correctly_handles_single_invalid_input	rna-transcription/rna_transcription_test.py	/^    def test_correctly_handles_single_invalid_input(self):$/;"	kind:member	line:23
+test_count_multiple_occurences	word-count/word_count_test.py	/^    def test_count_multiple_occurences(self):$/;"	kind:member	line:29
+test_count_one_of_each	word-count/word_count_test.py	/^    def test_count_one_of_each(self):$/;"	kind:member	line:23
+test_count_one_word	word-count/word_count_test.py	/^    def test_count_one_word(self):$/;"	kind:member	line:17
+test_decode	run-length-encoding/run_length_test.py	/^    def test_decode(self):$/;"	kind:member	line:14
+test_decode_unicode	run-length-encoding/run_length_test.py	/^    def test_decode_unicode(self):$/;"	kind:member	line:33
+test_decode_with_single	run-length-encoding/run_length_test.py	/^    def test_decode_with_single(self):$/;"	kind:member	line:22
+test_disallow_first_strand_longer	hamming/hamming_test.py	/^    def test_disallow_first_strand_longer(self):$/;"	kind:member	line:47
+test_disallow_second_strand_longer	hamming/hamming_test.py	/^    def test_disallow_second_strand_longer(self):$/;"	kind:member	line:51
+test_empty_strands	hamming/hamming_test.py	/^    def test_empty_strands(self):$/;"	kind:member	line:44
+test_empty_string	pangram/pangram_test.py	/^    def test_empty_string(self):$/;"	kind:member	line:10
+test_encode	run-length-encoding/run_length_test.py	/^    def test_encode(self):$/;"	kind:member	line:11
+test_encode_unicode_s	run-length-encoding/run_length_test.py	/^    def test_encode_unicode_s(self):$/;"	kind:member	line:30
+test_encode_with_single	run-length-encoding/run_length_test.py	/^    def test_encode_with_single(self):$/;"	kind:member	line:17
+test_ends_with_whitespace	bob/bob_test.py	/^    def test_ends_with_whitespace(self):$/;"	kind:member	line:112
+test_exceptional_century	leap/leap_test.py	/^    def test_exceptional_century(self):$/;"	kind:member	line:19
+test_forceful_questions	bob/bob_test.py	/^    def test_forceful_questions(self):$/;"	kind:member	line:46
+test_hello_with_blank_name	hello-world/hello_world_test.py	/^    def test_hello_with_blank_name(self):$/;"	kind:member	line:35
+test_hello_with_none_name	hello-world/hello_world_test.py	/^    def test_hello_with_none_name(self):$/;"	kind:member	line:41
+test_hello_with_other_sample_name	hello-world/hello_world_test.py	/^    def test_hello_with_other_sample_name(self):$/;"	kind:member	line:23
+test_hello_with_sample_name	hello-world/hello_world_test.py	/^    def test_hello_with_sample_name(self):$/;"	kind:member	line:17
+test_hello_with_umlaut_name	hello-world/hello_world_test.py	/^    def test_hello_with_umlaut_name(self):$/;"	kind:member	line:29
+test_hello_without_name	hello-world/hello_world_test.py	/^    def test_hello_without_name(self):$/;"	kind:member	line:11
+test_hour_and_minutes_roll_over	clock/clock_test.py	/^    def test_hour_and_minutes_roll_over(self):$/;"	kind:member	line:32
+test_hour_and_minutes_roll_over_continuously	clock/clock_test.py	/^    def test_hour_and_minutes_roll_over_continuously(self):$/;"	kind:member	line:35
+test_hour_and_minutes_roll_over_to_exactly_midnight	clock/clock_test.py	/^    def test_hour_and_minutes_roll_over_to_exactly_midnight(self):$/;"	kind:member	line:38
+test_hour_rolls_over	clock/clock_test.py	/^    def test_hour_rolls_over(self):$/;"	kind:member	line:17
+test_hour_rolls_over_continuously	clock/clock_test.py	/^    def test_hour_rolls_over_continuously(self):$/;"	kind:member	line:20
+test_identical_strands	hamming/hamming_test.py	/^    def test_identical_strands(self):$/;"	kind:member	line:8
+test_ignores_punctuation	word-count/word_count_test.py	/^    def test_ignores_punctuation(self):$/;"	kind:member	line:35
+test_include_numbers	word-count/word_count_test.py	/^    def test_include_numbers(self):$/;"	kind:member	line:41
+test_large_distance	hamming/hamming_test.py	/^    def test_large_distance(self):$/;"	kind:member	line:38
+test_large_distance_in_off_by_one_strand	hamming/hamming_test.py	/^    def test_large_distance_in_off_by_one_strand(self):$/;"	kind:member	line:41
+test_leap_year	leap/leap_test.py	/^    def test_leap_year(self):$/;"	kind:member	line:7
+test_long_identical_strands	hamming/hamming_test.py	/^    def test_long_identical_strands(self):$/;"	kind:member	line:11
+test_midnight_is_zero_hours	clock/clock_test.py	/^    def test_midnight_is_zero_hours(self):$/;"	kind:member	line:14
+test_minutes_roll_over	clock/clock_test.py	/^    def test_minutes_roll_over(self):$/;"	kind:member	line:26
+test_minutes_roll_over_continuously	clock/clock_test.py	/^    def test_minutes_roll_over_continuously(self):$/;"	kind:member	line:29
+test_missing_letters_replaced_by_numbers	pangram/pangram_test.py	/^    def test_missing_letters_replaced_by_numbers(self):$/;"	kind:member	line:33
+test_missing_x	pangram/pangram_test.py	/^    def test_missing_x(self):$/;"	kind:member	line:17
+test_mixed_case	word-count/word_count_test.py	/^    def test_mixed_case(self):$/;"	kind:member	line:47
+test_mixedcase_and_punctuation	pangram/pangram_test.py	/^    def test_mixedcase_and_punctuation(self):$/;"	kind:member	line:37
+test_multiple_spaces	word-count/word_count_test.py	/^    def test_multiple_spaces(self):$/;"	kind:member	line:53
+test_negative_hour	clock/clock_test.py	/^    def test_negative_hour(self):$/;"	kind:member	line:41
+test_negative_hour_and_minutes_both_roll_over	clock/clock_test.py	/^    def test_negative_hour_and_minutes_both_roll_over(self):$/;"	kind:member	line:59
+test_negative_hour_and_minutes_both_roll_over_continuously	clock/clock_test.py	/^    def test_negative_hour_and_minutes_both_roll_over_continuously(self):$/;"	kind:member	line:62
+test_negative_hour_rolls_over	clock/clock_test.py	/^    def test_negative_hour_rolls_over(self):$/;"	kind:member	line:44
+test_negative_hour_rolls_over_continuously	clock/clock_test.py	/^    def test_negative_hour_rolls_over_continuously(self):$/;"	kind:member	line:47
+test_negative_minutes	clock/clock_test.py	/^    def test_negative_minutes(self):$/;"	kind:member	line:50
+test_negative_minutes_roll_over	clock/clock_test.py	/^    def test_negative_minutes_roll_over(self):$/;"	kind:member	line:53
+test_negative_minutes_roll_over_continuously	clock/clock_test.py	/^    def test_negative_minutes_roll_over_continuously(self):$/;"	kind:member	line:56
+test_newlines	word-count/word_count_test.py	/^    def test_newlines(self):$/;"	kind:member	line:59
+test_non_alphanumeric	word-count/word_count_test.py	/^    def test_non_alphanumeric(self):$/;"	kind:member	line:75
+test_non_leap_even_year	leap/leap_test.py	/^    def test_non_leap_even_year(self):$/;"	kind:member	line:13
+test_non_leap_year	leap/leap_test.py	/^    def test_non_leap_year(self):$/;"	kind:member	line:10
+test_non_question_ends_with_whitespace	bob/bob_test.py	/^    def test_non_question_ends_with_whitespace(self):$/;"	kind:member	line:117
+test_non_unique_character_in_first_strand	hamming/hamming_test.py	/^    def test_non_unique_character_in_first_strand(self):$/;"	kind:member	line:29
+test_non_unique_character_in_second_strand	hamming/hamming_test.py	/^    def test_non_unique_character_in_second_strand(self):$/;"	kind:member	line:32
+test_on_the_hour	clock/clock_test.py	/^    def test_on_the_hour(self):$/;"	kind:member	line:8
+test_only_numbers	bob/bob_test.py	/^    def test_only_numbers(self):$/;"	kind:member	line:56
+test_pangram_with_numbers	pangram/pangram_test.py	/^    def test_pangram_with_numbers(self):$/;"	kind:member	line:29
+test_pangram_with_underscores	pangram/pangram_test.py	/^    def test_pangram_with_underscores(self):$/;"	kind:member	line:25
+test_past_the_hour	clock/clock_test.py	/^    def test_past_the_hour(self):$/;"	kind:member	line:11
+test_prattling_on	bob/bob_test.py	/^    def test_prattling_on(self):$/;"	kind:member	line:92
+test_prolonged_silence	bob/bob_test.py	/^    def test_prolonged_silence(self):$/;"	kind:member	line:102
+test_question_with_only_numbers	bob/bob_test.py	/^    def test_question_with_only_numbers(self):$/;"	kind:member	line:61
+test_same_nucleotides_in_different_positions	hamming/hamming_test.py	/^    def test_same_nucleotides_in_different_positions(self):$/;"	kind:member	line:35
+test_shouting	bob/bob_test.py	/^    def test_shouting(self):$/;"	kind:member	line:17
+test_shouting_numbers	bob/bob_test.py	/^    def test_shouting_numbers(self):$/;"	kind:member	line:51
+test_shouting_with_no_exclamation_mark	bob/bob_test.py	/^    def test_shouting_with_no_exclamation_mark(self):$/;"	kind:member	line:82
+test_shouting_with_special_characters	bob/bob_test.py	/^    def test_shouting_with_special_characters(self):$/;"	kind:member	line:66
+test_shouting_with_umlauts	bob/bob_test.py	/^    def test_shouting_with_umlauts(self):$/;"	kind:member	line:72
+test_silence	bob/bob_test.py	/^    def test_silence(self):$/;"	kind:member	line:97
+test_sixty_minutes_is_next_hour	clock/clock_test.py	/^    def test_sixty_minutes_is_next_hour(self):$/;"	kind:member	line:23
+test_small_distance	hamming/hamming_test.py	/^    def test_small_distance(self):$/;"	kind:member	line:23
+test_small_distance_in_long_strands	hamming/hamming_test.py	/^    def test_small_distance_in_long_strands(self):$/;"	kind:member	line:26
+test_small_distance_in_small_strands	hamming/hamming_test.py	/^    def test_small_distance_in_small_strands(self):$/;"	kind:member	line:20
+test_starts_with_whitespace	bob/bob_test.py	/^    def test_starts_with_whitespace(self):$/;"	kind:member	line:107
+test_statement_containing_question_mark	bob/bob_test.py	/^    def test_statement_containing_question_mark(self):$/;"	kind:member	line:87
+test_stating_something	bob/bob_test.py	/^    def test_stating_something(self):$/;"	kind:member	line:11
+test_subtract_across_midnight	clock/clock_test.py	/^    def test_subtract_across_midnight(self):$/;"	kind:member	line:99
+test_subtract_minutes	clock/clock_test.py	/^    def test_subtract_minutes(self):$/;"	kind:member	line:90
+test_subtract_more_than_an_hour	clock/clock_test.py	/^    def test_subtract_more_than_an_hour(self):$/;"	kind:member	line:96
+test_subtract_more_than_one_day	clock/clock_test.py	/^    def test_subtract_more_than_one_day(self):$/;"	kind:member	line:108
+test_subtract_more_than_two_days	clock/clock_test.py	/^    def test_subtract_more_than_two_days(self):$/;"	kind:member	line:111
+test_subtract_more_than_two_hours	clock/clock_test.py	/^    def test_subtract_more_than_two_hours(self):$/;"	kind:member	line:102
+test_subtract_more_than_two_hours_with_borrow	clock/clock_test.py	/^    def test_subtract_more_than_two_hours_with_borrow(self):$/;"	kind:member	line:105
+test_subtract_to_previous_hour	clock/clock_test.py	/^    def test_subtract_to_previous_hour(self):$/;"	kind:member	line:93
+test_tabs	word-count/word_count_test.py	/^    def test_tabs(self):$/;"	kind:member	line:67
+test_talking_forcefully	bob/bob_test.py	/^    def test_talking_forcefully(self):$/;"	kind:member	line:35
+test_transcribes_adenine_to_uracil	rna-transcription/rna_transcription_test.py	/^    def test_transcribes_adenine_to_uracil(self):$/;"	kind:member	line:17
+test_transcribes_all_occurences	rna-transcription/rna_transcription_test.py	/^    def test_transcribes_all_occurences(self):$/;"	kind:member	line:20
+test_transcribes_cytosine_to_guanine	rna-transcription/rna_transcription_test.py	/^    def test_transcribes_cytosine_to_guanine(self):$/;"	kind:member	line:11
+test_transcribes_guanine_to_cytosine	rna-transcription/rna_transcription_test.py	/^    def test_transcribes_guanine_to_cytosine(self):$/;"	kind:member	line:8
+test_transcribes_thymine_to_adenine	rna-transcription/rna_transcription_test.py	/^    def test_transcribes_thymine_to_adenine(self):$/;"	kind:member	line:14
+test_unchecked_german_umlaute	pangram/pangram_test.py	/^    def test_unchecked_german_umlaute(self):$/;"	kind:member	line:40
+test_unicode	word-count/word_count_test.py	/^    def test_unicode(self):$/;"	kind:member	line:81
+test_using_acronyms_in_regular_speech	bob/bob_test.py	/^    def test_using_acronyms_in_regular_speech(self):$/;"	kind:member	line:41
+test_valid_pangram	pangram/pangram_test.py	/^    def test_valid_pangram(self):$/;"	kind:member	line:13
+test_yourself	gigasecond/gigasecond_test.py	/^    def test_yourself(self):$/;"	kind:member	line:38
+timedelta	gigasecond/gigasecond.py	/^from datetime import datetime, timedelta$/;"	kind:namespace	line:1
+to_rna	rna-transcription/rna_transcription.py	/^def to_rna(dna: str) -> str:$/;"	kind:function	line:6
+to_rna	rna-transcription/rna_transcription_test.py	/^from rna_transcription import to_rna$/;"	kind:namespace	line:3
+transcribe	rna-transcription/rna_transcription.py	/^def transcribe(nucleotide: str) -> str:$/;"	kind:function	line:1
+unicode_literals	bob/bob_test.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	hello-world/hello_world_test.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:3
+unicode_literals	run-length-encoding/run_length_test.py	/^from __future__ import unicode_literals$/;"	kind:namespace	line:2
+unittest	bob/bob_test.py	/^import unittest$/;"	kind:namespace	line:4
+unittest	clock/clock_test.py	/^import unittest$/;"	kind:namespace	line:1
+unittest	gigasecond/gigasecond_test.py	/^import unittest$/;"	kind:namespace	line:2
+unittest	hamming/hamming_test.py	/^import unittest$/;"	kind:namespace	line:1
+unittest	hello-world/hello_world_test.py	/^import unittest$/;"	kind:namespace	line:4
+unittest	leap/leap_test.py	/^import unittest$/;"	kind:namespace	line:1
+unittest	pangram/pangram_test.py	/^import unittest$/;"	kind:namespace	line:3
+unittest	rna-transcription/rna_transcription_test.py	/^import unittest$/;"	kind:namespace	line:1
+unittest	run-length-encoding/run_length_test.py	/^import unittest$/;"	kind:namespace	line:4
+unittest	word-count/word_count_test.py	/^import unittest$/;"	kind:namespace	line:2
+word_count	word-count/word_count.py	/^def word_count(phrase: str) -> dict:$/;"	kind:function	line:4
+word_count	word-count/word_count_test.py	/^from word_count import word_count$/;"	kind:namespace	line:4
+word_count.py	word-count/word_count.py	1;"	kind:file	line:1
+word_count_test.py	word-count/word_count_test.py	1;"	kind:file	line:1

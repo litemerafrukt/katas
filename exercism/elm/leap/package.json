@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test": "elm package install && elm-test *Tests.elm"
+  },
+  "dependencies": {
+    "elm": "^0.17.0",
+    "elm-test": "^0.17.0"
+  }
+}

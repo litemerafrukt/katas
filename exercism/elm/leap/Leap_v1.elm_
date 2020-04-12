@@ -1,0 +1,17 @@
+module Leap exposing (..)
+
+
+isLeapYear : Int -> Bool
+isLeapYear year =
+    case ( rem year 400, rem year 100, rem year 4 ) of
+        ( 0, 0, _ ) ->
+            True
+
+        ( _, 0, _ ) ->
+            False
+
+        ( _, _, 0 ) ->
+            True
+
+        _ ->
+            False

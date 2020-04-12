@@ -1,0 +1,13 @@
+import re
+
+def words(phrase: str) -> list = 
+    re.findall(r'[^\W_]+', phrase)
+
+def word_set(phrase: str) -> set =
+    (words(phrase)
+        |> set)
+
+def word_count(phrase: str) -> dict =
+    word_counter = (word) -> words(phrase.lower()).count(word)
+    {word: word_counter(word) for word in word_set(phrase.lower())}
+
