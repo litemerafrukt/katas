@@ -45,53 +45,39 @@ export class List {
   }
 
   append(list) {
-    if (this.head === null) {
-      return this
-    }
-
-    let lastNode = null
-
-    for (let node of this.nodes()) {
-      lastNode = node
-    }
-
-    lastNode.next = list.head
-
-    return this
+    return new List([...this, ...list])
   }
 
   concat(listOfLists) {
-    if (listOfLists.list === null) {
-      return this
-    }
+    let values = []
 
     for (let list of listOfLists) {
-      this.append(list)
+      values.push(...list)
     }
 
-    return this
+    return new List([...this, ...values])
   }
 
   filter(pred) {
-    let prevNode = this.head
+    let filtered = []
 
     for (let node of this.nodes()) {
-      if (!pred(node.value)) {
-        prevNode.next = node.next
-        continue
+      if (pred(node.value)) {
+        filtered.push(node.value)
       }
-      prevNode = node
     }
 
-    return this
+    return new List(filtered)
   }
 
   map(fn) {
+    let mappedValues = []
+
     for (let node of this.nodes()) {
-      node.value = fn(node.value)
+      mappedValues.push(fn(node.value))
     }
 
-    return this
+    return new List(mappedValues)
   }
 
   foldl(fn, init) {
@@ -115,19 +101,6 @@ export class List {
   }
 
   reverse() {
-    let newHead = null
-    let traverser = this.head
-    let next = null
-
-    while (traverser !== null) {
-      next = traverser.next
-      traverser.next = newHead
-      newHead = traverser
-      traverser = next
-    }
-
-    this.head = newHead
-
-    return this
+    return new List([...this].reverse())
   }
 }

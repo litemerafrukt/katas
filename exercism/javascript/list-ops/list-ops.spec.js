@@ -30,7 +30,7 @@ describe("append entries to a list and return the new list", () => {
   test("list to empty list", () => {
     const list1 = new List()
     const list2 = new List([1, 2, 3, 4])
-    expect(list1.append(list2)).toEqual(list1)
+    expect(list1.append(list2)).toEqual(list2)
   })
 
   test("non-empty lists", () => {
