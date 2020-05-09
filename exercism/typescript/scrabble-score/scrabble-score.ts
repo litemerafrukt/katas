@@ -1,41 +1,16 @@
-import { Maybe } from "typemayberesult"
-import { pipe, Str, Arr } from "./lib"
-
-type letter = string
-type letters = string
-type letterScore = number
-type scoreMap = Array<[letters, letterScore]>
-
-const scoreMap: scoreMap = [
-  ["AEIOULNRST", 1],
-  ["DG", 2],
-  ["BCMP", 3],
-  ["FHVWY", 4],
+/* prettier-ignore */
+const scores = new Map<string, number>([
+  ["A", 1], ["E", 1], ["I", 1], ["O", 1], ["U", 1], ["L", 1], ["N", 1], ["R", 1], ["S", 1], ["T", 1],
+  ["D", 2], ["G", 2],
+  ["B", 3], ["C", 3], ["M", 3], ["P", 3],
+  ["F", 4], ["H", 4], ["V", 4], ["W", 4], ["Y", 4],
   ["K", 5],
-  ["JX", 8],
-  ["QZ", 10]
-]
+  ["J", 8], ["X", 8],
+  ["Q", 10], ["Z", 10],
+])
 
-const findLetterScore = (scoreMap: scoreMap, letter: letter): number =>
-  pipe (
-    Maybe.fromNullable (scoreMap.find (([letters]) => letters.includes (letter)))
-  ) (Maybe.map (([, score]) => score), Maybe.withDefault (0))
-
-const calcScore = (scoreMap: scoreMap, letters: string): number =>
-  pipe (letters) (
-    Str.toUpperCase,
-    Str.split (""),
-    Arr.reduce (
-      (score: number, letter: string) =>
-        score + findLetterScore (scoreMap, letter),
-      0
-    )
+export default (word: string = ""): number =>
+  Array.from(word.toUpperCase()).reduce(
+    (sum, letter) => sum + (scores.get(letter) ?? 0),
+    0
   )
-
-const score = (letters: letters | undefined): number =>
-  pipe (Maybe.fromNullable (letters)) (
-    Maybe.map ((letters: string) => calcScore (scoreMap, letters)),
-    Maybe.withDefault (0)
-  )
-
-export default score

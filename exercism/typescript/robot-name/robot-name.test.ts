@@ -1,5 +1,4 @@
-import RobotName from './robot-name'
-
+import RobotName from "./robot-name"
 
 const areSequential = (name1: string, name2: string): boolean => {
   const alpha1 = name1.substr(0, 2)
@@ -8,36 +7,36 @@ const areSequential = (name1: string, name2: string): boolean => {
   const num2 = +name2.substr(2, 3)
 
   const numDiff = num2 - num1
-  const alphaDiff = (alpha2.charCodeAt(0) - alpha1.charCodeAt(0)) * 26
-    + (alpha2.charCodeAt(1) - alpha1.charCodeAt(1))
+  const alphaDiff =
+    (alpha2.charCodeAt(0) - alpha1.charCodeAt(0)) * 26 +
+    (alpha2.charCodeAt(1) - alpha1.charCodeAt(1))
 
   const totalDiff = alphaDiff * 1000 + numDiff
 
   return Math.abs(totalDiff) <= 1
 }
 
-
-describe('Robot', () => {
+describe("Robot", () => {
   let robot: RobotName
 
   beforeEach(() => {
     robot = new RobotName()
   })
 
-  it('has a name', () => {
+  it("has a name", () => {
     expect(robot.name).toMatch(/^[A-Z]{2}\d{3}$/)
   })
 
-  xit('name is the same each time', () => {
+  it("name is the same each time", () => {
     expect(robot.name).toEqual(robot.name)
   })
 
-  xit('different robots have different names', () => {
+  xit("different robots have different names", () => {
     const differentRobot = new RobotName()
     expect(differentRobot.name).not.toEqual(robot.name)
   })
 
-  xit('is able to reset the name', () => {
+  xit("is able to reset the name", () => {
     const originalName = robot.name
 
     robot.resetName()
@@ -47,7 +46,7 @@ describe('Robot', () => {
     expect(originalName).not.toEqual(newName)
   })
 
-  xit('should set a unique name after reset', () => {
+  xit("should set a unique name after reset", () => {
     const NUMBER_OF_ROBOTS = 10000
     const usedNames = new Set()
 
@@ -60,16 +59,16 @@ describe('Robot', () => {
     expect(usedNames.size).toEqual(NUMBER_OF_ROBOTS + 1)
   })
 
-  xit('new names should not be sequential', () => {
+  xit("new names should not be sequential", () => {
     const name1 = robot.name
-    const name2 = (new RobotName()).name
-    const name3 = (new RobotName()).name
+    const name2 = new RobotName().name
+    const name3 = new RobotName().name
     expect(areSequential(name1, name1)).toBe(true)
     expect(areSequential(name1, name2)).toBe(false)
     expect(areSequential(name2, name3)).toBe(false)
   })
 
-  xit('names from reset should not be sequential', () => {
+  xit("names from reset should not be sequential", () => {
     const name1 = robot.name
     robot.resetName()
     const name2 = robot.name
@@ -79,5 +78,4 @@ describe('Robot', () => {
     expect(areSequential(name2, name3)).toBe(false)
     expect(areSequential(name3, name3)).toBe(true)
   })
-
 })

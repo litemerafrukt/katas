@@ -1,7 +1,9 @@
 export default class RobotName {
-  get name(): string {
-    return "AB123"
+  name: string
+
+  constructor() {
+    this.name = "AB123"
   }
 
-  resetName(): void {}
+  resetName() {}
 }
