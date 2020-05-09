@@ -1,9 +1,11 @@
+import NamePool from "./name-pool"
+
 export default class RobotName {
-  name: string
+  private static namePool = new NamePool()
 
-  constructor() {
-    this.name = "AB123"
+  name: string = RobotName.namePool.next()
+
+  resetName(): void {
+    this.name = RobotName.namePool.next()
   }
-
-  resetName() {}
 }
