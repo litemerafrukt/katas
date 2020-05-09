@@ -1,34 +1,31 @@
 export default class NamePool {
   private names: string[] = []
-  private indexes: number[] = []
 
   constructor() {
-    this.generateNamesAndIndexes()
+    this.generateNames()
   }
 
   next(): string {
-    const index = this.indexes.pop()
-    if (index === undefined) throw new Error("The name-pool is empty")
+    const name = this.names.pop()
 
-    return this.names[index]
+    if (name === undefined) throw new Error("The name-pool is empty")
+
+    return name
   }
 
-  private generateNamesAndIndexes(): void {
-    const letters = this.letters()
-    const digits = this.digits()
+  private generateNames(): void {
+    const alpha = this.letters()
+    const numeric = this.digits()
 
-    const names = []
+    this.names = []
 
-    for (const ls of letters) {
-      for (const ds of digits) {
-        names.push(`${ls}${ds}`)
+    for (const a of alpha) {
+      for (const n of numeric) {
+        this.names.push(`${a}${n}`)
       }
     }
 
-    this.names = names
-    this.indexes = Array.from({ length: this.names.length }, (_, i) => i).sort(
-      () => Math.random() - 0.5
-    )
+    this.names.sort(() => Math.random() - 0.5)
   }
 
   private letters(): string[] {
