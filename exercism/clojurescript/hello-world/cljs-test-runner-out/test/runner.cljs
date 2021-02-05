@@ -1,0 +1,1 @@
+(ns test.runner (:require [doo.runner :refer-macros [doo-tests]] hello-world-test) ) (doo-tests 'hello-world-test)

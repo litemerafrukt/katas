@@ -21,3 +21,4 @@ bs
 *.bs.js
 .vscode
 *.cabal
+.calva

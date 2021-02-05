@@ -1,0 +1,1 @@
+{:output-to "./cljs-test-runner-out/test-runner.js", :output-dir "./cljs-test-runner-out", :target :nodejs, :main test.runner, :optimizations :none}
